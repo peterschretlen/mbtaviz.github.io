@@ -1143,22 +1143,13 @@ VIZ.requiresData([
       brushed();
     });
 
-
-
-
-
   /* Bootstrap the Visualization - and re-render on width changes
    *************************************************************/
   VIZ.watchFixedRight(function (width) {
-    showingMap = true;
+    showingMap = false;
     renderMarey(marey, width);
     renderTrainsAtTime();
   });
-  renderSideMap(mapGlyphSvg, 300, 800);
-
-
-
-
 
   /* Miscellaneous Utilities
    *************************************************************/

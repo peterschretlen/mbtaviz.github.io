@@ -57,11 +57,10 @@
 
   function renderSplitScreen() {
     showingMap = true;
-    x1 = x0 + vizWidth / 3;
-    fixedRight.style("margin-left", x1 + "px");
-    fixedLeftWidth = vizWidth / 3 - GUTTER;
+    fixedRight.style("margin-left", "50px");
+    fixedLeftWidth = 0;
     fixedLeftHeight = pageHeight;
-    fixedRightWidth = vizWidth * 2 / 3;
+    fixedRightWidth = vizWidth;
     fixedLeft.style('width', fixedLeftWidth + 'px');
     fixedLeftWatchers.forEach(callFixedLeft);
     fixedRightWatchers.forEach(callFixedRight);
